@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/books")
+@RequestMapping(value = "api/books", produces = "application/xml")
 public class BookController {
 
     @GetMapping()
